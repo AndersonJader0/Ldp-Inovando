@@ -27,6 +27,7 @@ header nav ul{
     flex-direction: row;
     justify-content: center;
     gap: 18px;
+    margin-right: 60px;
 }
 
 header nav li{
