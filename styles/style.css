@@ -26,13 +26,12 @@ header nav ul{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 10px;
+    gap: 18px;
 }
 
 header nav li{
     list-style: none;
-    font-size: 13px;
-    gap: 3px;
+    font-size: 26px;
 }
 
 nav li a{
@@ -65,7 +64,7 @@ header nav li a:hover:before{
 }
 
 h1{
-    font-size: 18px;
+    font-size: 26px;
     margin-left: 0px;
     display: block;
     margin-top: -10px;
@@ -73,14 +72,14 @@ h1{
 }
 
 header img{
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
     margin-left: 20px;
     margin-bottom: -10px;
 }
 
 .comunidadedev{
-    font-size: 7px;
+    font-size: 14px;
     text-decoration: underline;
     margin-left: 20px;
 }
@@ -96,12 +95,17 @@ main section{
 main section article{
     padding: 30px;
     width: 50%;
-    margin-left: 20px;
+    margin-left: 80px;
 }
 
-main section p, main section h2{
+main section h2{
     letter-spacing:0.05em;
-    line-height: 16px;
+    line-height: 50px;
+}
+
+main section p{
+    letter-spacing: 0.05em;
+    line-height: 40px;
 }
 
 .registre-se{
@@ -109,13 +113,9 @@ main section p, main section h2{
     text-decoration: underline;
 }
 
-main section article h2{
-    font-weight: 600;
-}
-
 main section article h2, p{
     font-family: "nugosans";
-    font-size: 15px;
+    font-size: 35px;
     text-align: left;
     margin-right: 0;
 }
@@ -125,17 +125,17 @@ main section article h2, input, p{
 }
 
 main section article p{
-    font-size: 10px;
+    font-size: 22px;
 }
 
 input[type="text"], input[type="email"]{
     display: block;
     border: 1px solid black;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 5px;
-    width: 170px;
-    height: 15px;
-    font-size: 8px;
+    width: 370px;
+    height: 40px;
+    font-size: 18px;
     transition-property: border-color;
 }
 
@@ -154,12 +154,17 @@ input[type="text"]:focus::placeholder, input[type="email"]:focus::placeholder{
 
 
 input[type="submit"]{
-    display: block;
     border: 1px solid black;
     border-radius: 15px;
     padding: 5px;
     width: 50px;
     display: inline-block;
+    font-size: 8px;
+    width: 140px;
+    height: 50px;
+    border-radius: 30px;
+    transition: all 1.5s ease;
+    font-size: 18px;
 }
 
 input[type="submit"]:active{
@@ -168,14 +173,12 @@ input[type="submit"]:active{
 }
 
 input::placeholder{
-    font-size: 8px;
+    font-size: 18px;
+    padding-left: 20px;
 }
 
-input[type="submit"]{
-    font-size: 8px;
-    width: 70px;
-    height: 25px;
-    transition: all 1.5s ease;
+input:focus{
+    margin-left: 10px;
 }
 
 input[type="submit"]:hover{
@@ -188,8 +191,8 @@ main section aside{
 }
 
 main section aside img{
-    width: 145px;
-    height: 290px;
+    width: 300px;
+    height: 550px;
 }
 
 label[for=ckbox]{
@@ -197,7 +200,7 @@ label[for=ckbox]{
 
 }
 label[for=ckbox]{
-    margin-left: 10%;
+    margin-left: 80px;
 }
 
 form {
@@ -206,10 +209,10 @@ form {
 
 label[for=ckbox] .ckbox{
     display: inline-block;
-    width: 50px;
-    height: 20px;
+    width: 85px;
+    height: 40px;
     border: 1px solid black;
-    border-radius: 10px;
+    border-radius: 30px;
     position: relative;
     top: 24px;
 }
@@ -217,16 +220,16 @@ label[for=ckbox] .ckbox{
 form p{
     position: relative;
     top: 21px;
-    right: 14px;
+    right: 43px;
 }
 
 label[for=ckbox] .ckbox::before{
     content: "";
     position: absolute;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     border: 1px solid black;
-    top: 2px;
+    top: 10%;
     border-radius: 50%;
     margin-left: 1.8px;
 }   
@@ -244,18 +247,18 @@ input[type="checkbox"]{
 
 input[id="ckbox"]:checked + .ckbox::before{
     background-color:#ff405f;
-    margin-left: 32px;
+    margin-left: 50px;
     transition-duration: .3s;
 }
 
 input[id="ckbox"]:enabled + .ckbox::before{
-    margin-right: 32px;
+    margin-right: 50px;
     transition-duration: .3s;
 }
 
 input[id="ckbox"]:checked ~ p{
     color:#ff405f;
-    transition: all .5s ease-in;
+    transition: all .3s ease-in;
 }
 
 /*Footer espaço pra créditos*/
