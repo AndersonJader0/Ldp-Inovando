@@ -1,0 +1,266 @@
+/*Formatando a página*/
+
+html{
+    font-family: sans-serif;
+    background-color: rgba(253,234,228,255);
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho, nav e logo */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    font-family: "nugosans";
+    padding: 10px 30px 10px 32px;
+    align-items: center;
+}
+
+header nav ul{
+    margin-right: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+header nav li{
+    list-style: none;
+    font-size: 13px;
+    gap: 3px;
+}
+
+nav li a{
+    color: black;
+    text-decoration: none;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+header nav li a::before{
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    position: absolute;
+    text-decoration: underline;
+    background-color: #ff405f;
+    cursor: pointer;
+    transition: all 1.5s ease;
+}
+
+header nav li a:hover{
+    color: #ff405f;
+    transition-duration: 1s;
+}
+
+header nav li a:hover:before{
+    width: 100%;
+}
+
+h1{
+    font-size: 18px;
+    margin-left: 0px;
+    display: block;
+    margin-top: -10px;
+    font-family: "badcomic";
+}
+
+header img{
+    width: 50px;
+    height: 40px;
+    margin-left: 20px;
+    margin-bottom: -10px;
+}
+
+.comunidadedev{
+    font-size: 7px;
+    text-decoration: underline;
+    margin-left: 20px;
+}
+
+/* Formatando a main: form, h2, p, img*/
+
+main section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main section article{
+    padding: 30px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+main section p, main section h2{
+    letter-spacing:0.05em;
+    line-height: 16px;
+}
+
+.registre-se{
+    color: #ff405f;
+    text-decoration: underline;
+}
+
+main section article h2{
+    font-weight: 600;
+}
+
+main section article h2, p{
+    font-family: "nugosans";
+    font-size: 15px;
+    text-align: left;
+    margin-right: 0;
+}
+
+main section article h2, input, p{
+    margin-bottom: 10px;
+}
+
+main section article p{
+    font-size: 10px;
+}
+
+input[type="text"], input[type="email"]{
+    display: block;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    width: 170px;
+    height: 15px;
+    font-size: 8px;
+    transition-property: border-color;
+}
+
+input[type="text"]{
+    margin-bottom: 10px;
+}
+
+input[type="email"]{
+    margin-bottom: 0;
+}
+
+input[type="text"]:focus::placeholder, input[type="email"]:focus::placeholder{
+    color:#ff405f;
+    border: none;
+}
+
+
+input[type="submit"]{
+    display: block;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 5px;
+    width: 50px;
+    display: inline-block;
+}
+
+input[type="submit"]:active{
+    color: #ff405f;
+    border: 1px solid #ff405f;
+}
+
+input::placeholder{
+    font-size: 8px;
+}
+
+input[type="submit"]{
+    font-size: 8px;
+    width: 70px;
+    height: 25px;
+    transition: all 1.5s ease;
+}
+
+input[type="submit"]:hover{
+    border: 1px solid #ff405f;
+    color: #ff405f;
+    transition: all .5s ease-in;
+}
+main section aside{
+    margin: auto;
+}
+
+main section aside img{
+    width: 145px;
+    height: 290px;
+}
+
+label[for=ckbox]{
+    display: inline-block;
+
+}
+label[for=ckbox]{
+    margin-left: 10%;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label[for=ckbox] .ckbox{
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    top: 24px;
+}
+
+form p{
+    position: relative;
+    top: 21px;
+    right: 14px;
+}
+
+label[for=ckbox] .ckbox::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 1px solid black;
+    top: 2px;
+    border-radius: 50%;
+    margin-left: 1.8px;
+}   
+
+input[type="checkbox"]{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    transition-property: margin;
+}
+
+input[id="ckbox"]:checked + .ckbox::before{
+    background-color:#ff405f;
+    margin-left: 32px;
+    transition-duration: .3s;
+}
+
+input[id="ckbox"]:enabled + .ckbox::before{
+    margin-right: 32px;
+    transition-duration: .3s;
+}
+
+input[id="ckbox"]:checked ~ p{
+    color:#ff405f;
+    transition: all .5s ease-in;
+}
+
+/*Footer espaço pra créditos*/
+
+footer{
+    font-size: 10px;
+    margin-left: 48px;
+}
