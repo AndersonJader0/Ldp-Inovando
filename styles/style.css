@@ -222,6 +222,7 @@ form p{
     position: relative;
     top: 21px;
     right: 43px;
+    margin-bottom: 95px;
 }
 
 label[for=ckbox] .ckbox::before{
@@ -265,6 +266,6 @@ input[id="ckbox"]:checked ~ p{
 /*Footer espaço pra créditos*/
 
 footer{
-    font-size: 10px;
-    margin-left: 48px;
+    font-size: 18px;
+    margin-left: 112px;
 }
