@@ -17,17 +17,18 @@ header{
     display: flex;
     justify-content: space-between;
     font-family: "nugosans";
-    padding: 10px 30px 10px 32px;
     align-items: center;
+    width: 96%;
+    max-width: 1300px;
+    margin: auto;
 }
 
 header nav ul{
-    margin-right: 18px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 18px;
-    margin-right: 60px;
+    margin-right: 50px;
 }
 
 header nav li{
@@ -91,12 +92,22 @@ main section{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 main section article{
-    padding: 30px;
     width: 50%;
-    margin-left: 80px;
+}
+
+main section aside{
+    width: 50%;
+    margin-top: 0;
+}
+
+main section article div{
+    padding: 30px;
+    width: 71%;
+    margin: auto;
 }
 
 main section h2{
@@ -187,9 +198,7 @@ input[type="submit"]:hover{
     color: #ff405f;
     transition: all .5s ease-in;
 }
-main section aside{
-    margin: auto;
-}
+
 
 main section aside img{
     width: 300px;
@@ -222,7 +231,7 @@ form p{
     position: relative;
     top: 21px;
     right: 43px;
-    margin-bottom: 95px;
+    margin-bottom: 10px;
 }
 
 label[for=ckbox] .ckbox::before{
@@ -261,6 +270,12 @@ input[id="ckbox"]:enabled + .ckbox::before{
 input[id="ckbox"]:checked ~ p{
     color:#ff405f;
     transition: all .3s ease-in;
+}
+
+main section aside div{
+    padding-right: 100px;
+    padding-left: 100px;
+    text-align: center;
 }
 
 /*Footer espaço pra créditos*/
