@@ -4,6 +4,7 @@ html{
     font-family: sans-serif;
     background-color: rgba(253,234,228,255);
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 * {
@@ -33,7 +34,7 @@ header nav ul{
 
 header nav li{
     list-style: none;
-    font-size: 26px;
+    font-size: 2.6rem;
 }
 
 nav li a{
@@ -66,7 +67,7 @@ header nav li a:hover:before{
 }
 
 h1{
-    font-size: 26px;
+    font-size: 2.6rem;
     margin-left: 0px;
     display: block;
     margin-top: -10px;
@@ -81,7 +82,7 @@ header img{
 }
 
 .comunidadedev{
-    font-size: 14px;
+    font-size: 1.4rem;
     text-decoration: underline;
     margin-left: 20px;
 }
@@ -96,11 +97,11 @@ main section{
 }
 
 main section article{
-    width: 50%;
+    width: 100%;
 }
 
 main section aside{
-    width: 50%;
+    width: 100%;
     margin-top: 0;
 }
 
@@ -111,13 +112,14 @@ main section article div{
 }
 
 main section h2{
-    letter-spacing:0.05em;
-    line-height: 50px;
+    letter-spacing: .1rem;
+    line-height: 4rem;
 }
 
 main section p{
-    letter-spacing: 0.05em;
-    line-height: 40px;
+    letter-spacing: .1rem;
+    line-height: 4rem;
+    font-size: 2.2rem;
 }
 
 .registre-se{
@@ -127,17 +129,13 @@ main section p{
 
 main section article h2, p{
     font-family: "nugosans";
-    font-size: 35px;
+    font-size: 3.5rem;
     text-align: left;
     margin-right: 0;
 }
 
 main section article h2, input, p{
     margin-bottom: 10px;
-}
-
-main section article p{
-    font-size: 22px;
 }
 
 input[type="text"], input[type="email"]{
@@ -147,7 +145,7 @@ input[type="text"], input[type="email"]{
     padding: 5px;
     width: 370px;
     height: 40px;
-    font-size: 18px;
+    font-size: 1.8rem;
     transition-property: border-color;
 }
 
@@ -171,12 +169,12 @@ input[type="submit"]{
     padding: 5px;
     width: 50px;
     display: inline-block;
-    font-size: 8px;
+    font-size: .8rem;
     width: 140px;
     height: 50px;
     border-radius: 30px;
     transition: all 1.5s ease;
-    font-size: 18px;
+    font-size: 1.8rem;
 }
 
 input[type="submit"]:active{
@@ -185,7 +183,7 @@ input[type="submit"]:active{
 }
 
 input::placeholder{
-    font-size: 18px;
+    font-size: 1.8rem;
     padding-left: 20px;
 }
 
@@ -260,6 +258,7 @@ input[id="ckbox"]:checked + .ckbox::before{
     background-color:#ff405f;
     margin-left: 50px;
     transition-duration: .3s;
+    box-shadow: 0 0 0 1px #ff405f;
 }
 
 input[id="ckbox"]:enabled + .ckbox::before{
@@ -281,6 +280,24 @@ main section aside div{
 /*Footer espaço pra créditos*/
 
 footer{
-    font-size: 18px;
+    font-size: 1.8rem;
     margin-left: 112px;
+}
+
+/* Responsividade */
+
+@media (max-width: 320px){
+
+html{
+        font-size: 55%;
+    }
+
+article div{
+    flex-direction: column;
+}
+
+section{
+    display: flex;
+}
+
 }
